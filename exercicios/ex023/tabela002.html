@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        thead{
+            background-color: gray;
+            color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0px;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(odd){  /* 2n-1 pares*/
+            background-color: white;
+        }
+        tbody > tr:nth-child(even){  /* 2n ímpares*/
+            background-color: lightgray;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        td.numero{
+            text-align: right;
+        }
+        th#coluna2{
+            width: 50px;
+        }
+        
+        tfoot{
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas Grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE = estrutura da tabela
+            THEAD = cabeça da tabela
+            pode ter tr,td,th
+            TBODY = corpo da tabela
+            pode ter tr,td,th
+            TFOOT = rodapé da tabela
+            pode ter tr,td,th
+    -->
+    <table>
+        <caption>Populaçao das Unidades Federativas</caption>
+        <thead>
+            <th scope="col">Estado</th>
+            <th scope="col" id="coluna2">Populaçao</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São paulo</td>
+                <td class="numero">45919049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21168791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17254943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">17254943</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="numero">17254943</td>
+            </tr>
+            <tr>
+                <td>Rio grande do sul</td>
+                <td class="numero">17254943</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">17254943</td>
+            </tr>
+            <tr>
+                <td>Ceara</td>
+                <td class="numero">17254943</td>
+            </tr>
+            <tr>
+                <td>Para</td>
+                <td class="numero">17254943</td>
+            </tr>
+            <tr>
+                <td>Santa catarina</td>
+                <td class="numero">17254943</td>
+            </tr>
+            <tr>
+                <td>Maranhao</td>
+                <td class="numero">17254943</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td class="numero">17254943</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">17254943</td>
+            </tr>
+            <tr>
+                <td>Espirito santo</td>
+                <td class="numero">17254943</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td class="numero">17254943</td>
+            </tr>
+            <tr>
+                <td>Rio grande do norte</td>
+                <td class="numero">17254943</td>
+            </tr>
+            <tr>
+                <td>Mato grosso</td>
+                <td class="numero">17254943</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="numero">17254943</td>
+            </tr>
+            <tr>
+                <td>Piaui</td>
+                <td class="numero">17254943</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="numero">17254943</td>
+            </tr>
+            <tr>
+                <td>Mato grosso do sul</td>
+                <td class="numero">17254943</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="numero">17254943</td>
+            </tr>
+            <tr>
+                <td>Rondonia</td>
+                <td class="numero">17254943</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="numero">17254943</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="numero">17254943</td>
+            </tr>
+            <tr>
+                <td>Amapa</td>
+                <td class="numero">17254943</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="numero">17254943</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="numero"><strong>21321381318413189</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
