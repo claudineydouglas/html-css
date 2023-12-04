@@ -19,13 +19,13 @@ h1 {
     text-align: center;
 }
 
-span#burger {
+span#burguer {
     background-color: rgb(54, 54, 54);
     display: block;
     color: white;
-    text-align: center;
     padding: 10px;
     cursor: pointer;
+    text-align: center;
 }
 
 span#burger:hover {
